@@ -1,0 +1,167 @@
+/* Specific styles for Blog Post */
+
+.pp-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 120px 1fr 100px;
+  grid-template-areas:
+    "hd hd hd hd "
+    "main main main sd"
+    " ft ft ft ft"
+  ;
+}
+
+.hdp {
+  grid-area: hd;
+}
+
+header {
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 0 0 15% 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .logo,
+.nav-menu {
+  margin-top: 30px;
+  height: 50px;
+}
+
+header .logo a {
+
+  font-weight: bold;
+  font-size: 22px;
+  color: #211d4f;
+}
+
+
+
+header .nav-menu a {
+  font-size: 20px;
+  color: #211d4f;
+  margin: 15px;
+  transition: all 0.3s;
+}
+
+.nav-menu a:hover {
+  opacity: 0.5;
+
+}
+
+/* author info */
+.author-box {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  margin: 1rem auto;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px -5px rgba(0, 0, 0, 0.3);
+
+}
+
+.author-box .avatar {
+  height: 200px;
+}
+
+.author-box .avatar img {
+  height: 40%;
+  padding: 17px 0 0 10px;
+}
+
+.author-box .author-info {
+  padding: 0 24px;
+}
+
+.name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.title-author,
+.company {
+  font-size: 14px;
+  color: #9b9b9b;;
+}
+
+.bio {
+  max-width: 200px;
+  padding-top: 15px;
+}
+
+/* social sharing */
+.media {
+  width: 2rem;
+}
+
+.social {
+  width: fit-content;
+  height: fit-content;
+  margin: 10px auto;
+}
+
+.list {
+  padding-top: 10px;
+}
+
+.head {
+  color: #9b9b9b;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+/* blockquote */
+.main-pp{
+  width:95%;
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block-blog {
+  margin-top: 3rem;
+}
+
+blockquote{
+  padding: 0 1.5rem;
+}
+.blog-art{
+  border-bottom: 1px solid #ccc;
+  margin: 2rem 0;
+  padding: 2rem 0 2rem 0;
+}
+
+.article-title{
+  font-weight: 900;
+  line-height: 1.25;
+  display: block;
+}
+
+.article-sub {
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.article-head {
+  margin: 5rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.article-par {
+  min-width: 100%;
+  max-width: 50%;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-top: 0.75rem;
+}
+
+
+
+.article-img img {
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
+}

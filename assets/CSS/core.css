@@ -1,0 +1,17 @@
+/* Core styles shared across all pages */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #fdf6e9;
+}
+
+a {
+  text-decoration: none;
+}
